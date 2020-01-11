@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "850418875555",
+    "firebase_url": "https://scholers-wheel.firebaseio.com",
+    "project_id": "scholers-wheel",
+    "storage_bucket": "scholers-wheel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850418875555:android:a71c622ddafc8994fa1316",
+        "android_client_info": {
+          "package_name": "com.example.scholerswheel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850418875555-kqmjmkal2qc4fme7kcv50qek9oiim8f1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scholerswheel",
+            "certificate_hash": "61710d7e1717f641d4d063510808f6195320d64f"
+          }
+        },
+        {
+          "client_id": "850418875555-gjomaqrntpf88756necete4qv6e4a130.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJAdr0b4LPwVsToM02zywtMwfs7WAF1cM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850418875555-gjomaqrntpf88756necete4qv6e4a130.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
