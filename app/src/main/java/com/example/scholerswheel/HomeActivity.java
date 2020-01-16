@@ -7,11 +7,14 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -37,6 +40,10 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_drawer);
+
+        ImageView imageView2 =findViewById(R.id.imageView2);
+        AnimationDrawable animationDrawable = (AnimationDrawable) imageView2.getDrawable();
+        animationDrawable.start();
 
         setupToolbar();
 

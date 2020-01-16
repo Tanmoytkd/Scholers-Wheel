@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0E4F66"
     tools:context=".HomeActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -24,88 +25,134 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
 
     </androidx.appcompat.widget.Toolbar>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:src="@drawable/anim_slideshow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/scholars_home" />
 
     <Button
         android:id="@+id/btn_track"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_width="179dp"
+        android:layout_height="163dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="6dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/cardview_shadow_start_color"
         android:text="Track Bus"
-        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="18sp"
+        app:iconTint="#00802A2A"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:rippleColor="#3445607A" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="390dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/track" />
 
     <Button
         android:id="@+id/btn_schedule"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="Bus Schedule"
-        android:textColor="@color/design_default_color_primary_dark"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/btn_notification"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_width="179dp"
+        android:layout_height="163dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="6dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:text="Bus Schedule"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schedule" />
+
+    <Button
+        android:id="@+id/btn_notification"
+        android:layout_width="179dp"
+        android:layout_height="163dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"
         android:text="Notifications"
-        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_track" />
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="111dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="560dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/noti" />
+
     <Button
         android:id="@+id/btn_faculties"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_width="179dp"
+        android:layout_height="163dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/cardview_shadow_start_color"
         android:text="Faculties"
-        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/btn_notification" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_schedule" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fact" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
